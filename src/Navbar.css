@@ -1,0 +1,65 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    
+  }
+
+  nav a {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por el tipo de letra que prefieras */
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px; /* Ajusta el margen como necesites */
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 0;
+    padding: 5px 10px;
+  }
+
+  li a {
+    
+    padding: 10px 10px; /* Ajusta según necesites */
+  }
+  
+  
+  li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Tu estilo de sombra */
+    border-radius: 2px;
+  }
+  .register-btn {
+    background-color: #cc0000; /* Un rojo claro/sutil */
+    color: white; /* Asegúrate de que el texto sea blanco */
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .register-btn:hover {
+    background-color:#c02929;  /* Un rojo más oscuro */
+  }
+  
+  .logo img {
+    height: auto; /* Esto mantiene la proporción de aspecto */
+    width: 200px; /* Ajusta esto según tus necesidades */
+    margin: 0 15px; /* Ajusta el valor '15px' según tus necesidades */
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    transition: transform 0.2s ease-in-out; /* Hace la transición más suave */
+  }
+  
