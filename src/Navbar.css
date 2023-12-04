@@ -1,65 +1,208 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 4%;
-    padding-right: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4%;
+  padding-right: 4%;
+
+}
+
+nav li {
+  margin-right: 5px;
+  /* Ajusta el margen derecho según tus necesidades */
+  padding: 5px 0;
+  /* Ajusta el espaciado vertical según tus necesidades */
+}
+
+
+nav a {
+  font-family: 'Arial', sans-serif;
+  /* Cambia 'Arial' por el tipo de letra que prefieras */
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  /* Ajusta el margen como necesites */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+li {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+li a {
+
+  padding: 10px 10px;
+  /* Ajusta según necesites */
+}
+
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Tu estilo de sombra */
+  border-radius: 2px;
+}
+
+.register-btn {
+  background-color: red;
+  /* Un rojo claro/sutil */
+  color: white;
+  /* Asegúrate de que el texto sea blanco */
+  padding: 10px;
+  justify-content: center; 
+  align-items: center;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #cc0000;
+  /* Un rojo más oscuro */
+}
+
+.logo img {
+  height: auto;
+  /* Esto mantiene la proporción de aspecto */
+  width: 200px;
+  /* Ajusta esto según tus necesidades */
+  margin: 0 15px;
+  /* Ajusta el valor '15px' según tus necesidades */
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  /* Aumenta ligeramente el tamaño */
+  transition: transform 0.2s ease-in-out;
+  /* Hace la transición más suave */
+}
+
+.hamburger-icon {
+  font-size: 24px; /* Ajusta el tamaño del icono */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
+  display: none; /* Oculta por defecto y se mostrará en pantallas más pequeñas */
+  padding: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0; /* Ajusta la posición vertical según tus necesidades */
+  right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+  cursor: pointer;
+  display: none;
+  color: #fff; /* Cambia el color del icono "X" */
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  .hamburger-icon {
+    display: block; /* Muestra el icono en pantallas pequeñas */
+  }
+
+  .close-icon {
+    display: block;
+  }
+  /* Ocultar la lista de navegación en pantallas pequeñas */
+  nav ul {
+    display: none;
+  }
+
+ /* CSS para el menú desplegable */
+ .menu {
+  margin: 0;
+  list-style: none;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 200;
+  overflow: auto;
+  right: -100%;
+  background-color: #141414;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  width: 300px;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.menu.open {
+  right: 0; /* Muestra el menú desplazándolo desde la derecha */
+}
+
+.menu li {
+  margin-bottom: 10px; /* Agrega margen entre los elementos del menú */
+}
+ 
+.register-btn {
+  /* Tus estilos existentes para 'register-btn' */
+  display: flex;  /* Asegura que los elementos internos sean flexibles */
+  justify-content: center; /* Centra los elementos internos horizontalmente */
+  width: auto; /* Asegura que el botón ocupe todo el ancho disponible */
+  margin: 8px auto;
+  padding: 10px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+  .menu {
+   
+    width: 200px;
     
   }
-
-  nav a {
-    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por el tipo de letra que prefieras */
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 10px; /* Ajusta el margen como necesites */
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  li {
-    margin-right: 0;
-    padding: 5px 10px;
-  }
-
-  li a {
-    
-    padding: 10px 10px; /* Ajusta según necesites */
-  }
-  
-  
-  li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Tu estilo de sombra */
-    border-radius: 2px;
-  }
-  .register-btn {
-    background-color: #cc0000; /* Un rojo claro/sutil */
-    color: white; /* Asegúrate de que el texto sea blanco */
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .register-btn:hover {
-    background-color:#c02929;  /* Un rojo más oscuro */
-  }
-  
   .logo img {
-    height: auto; /* Esto mantiene la proporción de aspecto */
-    width: 200px; /* Ajusta esto según tus necesidades */
-    margin: 0 15px; /* Ajusta el valor '15px' según tus necesidades */
+    width: 200px; /* Más pequeño en pantallas más estrechas */
   }
-  
-  .logo img:hover {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
-    transition: transform 0.2s ease-in-out; /* Hace la transición más suave */
+  /* Otros ajustes responsivos */
+}
+
+@media (max-width: 400px) {
+
+  .menu {
+   
+    width: 150px;
+    
   }
-  
+
+  .hamburger-icon {
+    font-size: 20px; /* Ajusta el tamaño del icono */
+    padding: 10px;
+  }
+  .logo img {
+    width: 150px; /* Más pequeño en pantallas más estrechas */
+  }
+  /* Otros ajustes responsivos */
+}
+
+
+@media (max-width: 400px) {
+
+  .menu {
+   
+    width: 100px;
+    
+  }
+
+  .hamburger-icon {
+    font-size: 15px; /* Ajusta el tamaño del icono */
+    padding: 10px;
+  }
+  .logo img {
+    width: 100px; /* Más pequeño en pantallas más estrechas */
+  }
+  /* Otros ajustes responsivos */
+}
+

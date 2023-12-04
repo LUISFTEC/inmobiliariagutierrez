@@ -1,0 +1,67 @@
+.course-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 15%;
+    margin-left: 4%; /* Agregamos un margen del 4% a la izquierda */
+    justify-content: center; /* Centramos verticalmente */
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  
+  .banner-duration {
+    margin-top: 1px;
+    font-size: 1.5rem;
+  }
+
+  .banner-description {
+    font-size: 1.2rem; /* Cambia el tamaño de letra según tu preferencia */
+    line-height: 1.5;
+    margin-top: 10px; /* Añade margen superior para separarlo del párrafo anterior */
+
+}
+  
+
+.course-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregamos una transición suave */
+}
+
+.course-button:hover {
+    background-color: #cc0000; /* Cambiamos el color de fondo a un rojo más oscuro en hover */
+}
+
+@media (max-width: 1200px) {
+    .course-section {
+        align-items: center; /* Centrar horizontalmente */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .course-section {
+        align-items: center; /* Centrar horizontalmente */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}
