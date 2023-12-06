@@ -1,11 +1,15 @@
 nav {
+  width: 100%;
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
   padding-left: 4%;
   padding-right: 4%;
-
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+  z-index: 10;
 }
+
 
 nav li {
   margin-right: 5px;

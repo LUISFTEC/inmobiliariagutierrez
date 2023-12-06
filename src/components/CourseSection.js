@@ -1,5 +1,5 @@
 import React from 'react';
-import './CourseSection.css'; // Asegúrate de crear este archivo CSS
+import '../styles/CourseSection.css'; // Asegúrate de crear este archivo CSS
 
 function CourseSection() {
     return (

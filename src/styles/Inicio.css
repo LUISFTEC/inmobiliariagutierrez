@@ -1,0 +1,100 @@
+/* Estilos para la cabecera */
+header {
+    background-image: url('../img/fondounidos.jpg');
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container {
+  width: 100%;
+}
+
+.top-row {
+  display: flex; /* Alinea los elementos en horizontal */
+}
+
+.header-background {
+  background-color: rgba(42, 34, 34, 1); /* Color azul */
+  width: 50%; /* Ancho al 50% */
+  height: 70vh; /* Altura al 50% de la altura de la ventana */
+  
+}
+
+
+.rectangle-box {
+  width: 10%; /* Ancho al 50% */
+  height: 70vh; /* Altura al 50% de la altura de la ventana */
+
+}
+
+.bottom-row {
+  width: 100%; /* Ocupa el ancho completo */
+}
+
+.rectangle-box1 {
+  width: 50%; /* Ancho al 50% */
+  height: 20vh; /* Altura al 50% de la altura de la ventana */
+  
+}
+
+  
+  .header-content {
+    width: 100%;
+    padding: 100px;
+  
+  }
+  
+  header h1 {
+    font-size: 50px;
+  }
+  
+  .header-conten p {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para las secciones de información */
+section {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

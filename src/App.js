@@ -1,19 +1,26 @@
 import React from 'react';
-import Navbar from './Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Inicio from './components/Inicio'; // Importa el componente Inicio desde el archivo correspondiente
+import CourseSection from './components/CourseSection';
 
 import './App.css';
-import CourseSection from './CourseSection';
-
-// Importar otros estilos o componentes aquí
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <CourseSection />
-      {/* Otros componentes o contenido aquí */}
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Inicio />} /> {/* Ruta inicial */}
+                    <Route path="/inicio" element={<Inicio />} />
+                    <Route path="/cursos" element={<CourseSection />} />
+                    {/* Otras rutas */}
+                </Routes>
+
+            </div>
+        </Router>
+    );
 }
 
 export default App;
