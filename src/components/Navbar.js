@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 import '../styles/Navbar.css';
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <img src="/assets/logo.png" alt="Logo Academia Legan" />
+        <img src="./assets/logo.png" alt="Logo Academia Legan" />
       </div>
 
       <div className="hamburger-icon" onClick={toggleMenu}>
@@ -19,16 +20,13 @@ function Navbar() {
       </div>
 
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="/inicio"><i className="fas fa-home"></i> Inicio</a></li>
-        <li><a href="/nosotros"><i className="fas fa-users"></i> Nosotros</a></li>
-        <li><a href="/cursos"><i className="fas fa-book-open"></i> Cursos</a></li>
-        <li><a href="/servicios"><i className="fas fa-cogs"></i> Servicios</a></li>
-        <li><a href="/vip"><i className="fas fa-star"></i> VIP</a></li>
-        <li><a href="/iniciar-sesion"><i className="fas fa-sign-in-alt"></i> Iniciar Sesión</a></li>
-        <li><a href="/registrarse" className={`register-btn ${isMenuOpen ? 'centered' : ''}`}>Registrarse</a></li>
-        <li className="close-icon" onClick={toggleMenu}>
-          <i className="fas fa-times"></i> {/* Icono "X" */}
-        </li>
+        <li><Link to="/inicio"><i className="fas fa-home"></i> Inicio</Link></li>
+        <li><Link to="/nosotros"><i className="fas fa-users"></i> Nosotros</Link></li>
+        <li><Link to="/cursos"><i className="fas fa-book-open"></i> Cursos</Link></li>
+        <li><Link to="/servicios"><i className="fas fa-cogs"></i> Servicios</Link></li>
+        <li><Link to="/vip"><i className="fas fa-star"></i> VIP</Link></li>
+        <li><Link to="/iniciar-sesion"><i className="fas fa-sign-in-alt"></i> Iniciar Sesión</Link></li>
+        <li><Link to="/registrarse" className={`register-btn ${isMenuOpen ? 'centered' : ''}`}>Registrarse</Link></li>
       </ul>
     </nav>
   );

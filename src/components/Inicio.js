@@ -58,7 +58,7 @@ function Inicio() {
                     <div className="proyecto0">
                         <a href="#">
                             <div className="overlay"></div>
-                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <img src="./assets/perfillaptop.jpg" alt="" />
                             <div className="info">
                                 <h4>Academia Legan</h4>
                             </div>
@@ -67,7 +67,7 @@ function Inicio() {
                     <div className="proyecto0">
                         <a href="#">
                             <div className="overlay"></div>
-                            <img src="/assets/perfildenis.jpg" alt="" />
+                            <img src="./assets/perfildenis.jpg" alt="" />
                             <div className="info">
                                 <h4>Trading X Denis</h4>
                             </div>
@@ -76,7 +76,7 @@ function Inicio() {
                     <div className="proyecto0">
                         <a href="#">
                             <div className="overlay"></div>
-                            <img src="/assets/perfiljorge.jpg" alt="" />
+                            <img src="./assets/perfiljorge.jpg" alt="" />
                             <div className="info">
                                 <h4>Trading X Jorge </h4>
                             </div>
@@ -87,7 +87,7 @@ function Inicio() {
                     <div className="proyecto0">
                         <a href="#">
                             <div className="overlay"></div>
-                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <img src="./assets/perfillaptop.jpg" alt="" />
                             <div className="info">
                                 <h4>Progresemos juntos</h4>
                             </div>
@@ -96,7 +96,7 @@ function Inicio() {
                     <div className="proyecto0">
                         <a href="#">
                             <div className="overlay"></div>
-                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <img src="./assets/perfillaptop.jpg" alt="" />
                             <div className="info">
                                 <h4>Mi Web</h4>
                             </div>
@@ -105,7 +105,7 @@ function Inicio() {
                     <div className="proyecto0">
                         <a href="#">
                             <div className="overlay"></div>
-                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <img src="./assets/perfillaptop.jpg" alt="" />
                             <div className="info">
                                 <h4>proyecto6</h4>
                             </div>
@@ -118,7 +118,7 @@ function Inicio() {
             <section id='pregunta'>
                 <div className="trading-content">
                     <div className="trading-image">
-                        <img src="/assets/laptop.jpg" alt="Imagen de trading" />
+                        <img src="./assets/laptop.jpg" alt="Imagen de trading" />
                     </div>
                     <div className="trading-text">
                         <h2>¿Cómo puede una estrategia digital sólida llevar tus operaciones de trading al siguiente nivel?</h2>
@@ -133,16 +133,16 @@ function Inicio() {
             <section className="slider-container">
                 <h2 className="titulo-especifico" >Ellos son algunos Alumnos Satisfechos</h2>
                 <Slider {...settings}>
-                    <div><img src="/assets/1.png" alt="Alumno 1" /></div>
-                    <div><img src="/assets/2.png" alt="Alumno 2" /></div>
-                    <div><img src="/assets/3.png" alt="Alumno 3" /></div>
-                    <div><img src="/assets/4.png" alt="Alumno 4" /></div>
-                    <div><img src="/assets/5.png" alt="Alumno 5" /></div>
-                    <div><img src="/assets/6.png" alt="Alumno 6" /></div>
-                    <div><img src="/assets/7.png" alt="Alumno 7" /></div>
-                    <div><img src="/assets/8.png" alt="Alumno 8" /></div>
-                    <div><img src="/assets/9.png" alt="Alumno 9" /></div>
-                    <div><img src="/assets/10.png" alt="Alumno 10" /></div>
+                    <div><img src="./assets/1.png" alt="Alumno 1" /></div>
+                    <div><img src="./assets/2.png" alt="Alumno 2" /></div>
+                    <div><img src="./assets/3.png" alt="Alumno 3" /></div>
+                    <div><img src="./assets/4.png" alt="Alumno 4" /></div>
+                    <div><img src="./assets/5.png" alt="Alumno 5" /></div>
+                    <div><img src="./assets/6.png" alt="Alumno 6" /></div>
+                    <div><img src="./assets/7.png" alt="Alumno 7" /></div>
+                    <div><img src="./assets/8.png" alt="Alumno 8" /></div>
+                    <div><img src="./assets/9.png" alt="Alumno 9" /></div>
+                    <div><img src="./assets/10.png" alt="Alumno 10" /></div>
                 </Slider>
             </section>
 
