@@ -1,10 +1,27 @@
 import React from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import '../styles/Inicio.css'; // Asegúrate de crear este archivo CSS
+import '../styles/inicioservicios.css';
+import '../styles/iniciopregunta.css';
+import '../styles/iniciocarrusel.css';
 import horizontalImage from '../img/horisontal.png';
 import verticalImage from '../img/vertical.png';
 
 
 function Inicio() {
+    // Configuración para react-slick
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true, // Habilita el desplazamiento de derecha a izquierda
+    };
     return (
         <div>
             <header className="header-container">
@@ -13,10 +30,10 @@ function Inicio() {
                         <div className="header-content">
                             <h1>Academia de Trading <br />Aprende con los Mejores</h1>
                             <p>
-                                Explora el emocionante mundo del trading con nosotros.<br />
-                                Ya seas un principiante en busca de conocimientos básicos <br />
-                                o un trader experimentado en busca de estrategias avanzadas,<br />
-                                estamos aquí para guiarte. Únete a nuestra comunidad y potencia <br />
+                                Explora el emocionante mundo del trading con nosotros.
+                                Ya seas un principiante en busca de conocimientos básicos
+                                o un trader experimentado en busca de estrategias avanzadas,
+                                estamos aquí para guiarte. Únete a nuestra comunidad y potencia
                                 tus habilidades en el mercado financiero.
                             </p>
                             <button>Ver Cursos</button>
@@ -26,22 +43,111 @@ function Inicio() {
                     <img src={verticalImage} alt="Descripción de la imagen" className="rectangle-box" />
                 </div>
                 <div className="bottom-row">
-                <img src={horizontalImage} alt="Descripción de la imagen" className="rectangle-box1" />
+                    <img src={horizontalImage} alt="Descripción de la imagen" className="rectangle-box1" />
                 </div>
-                
+
             </header>
 
+            <section id="proyecto">
+                <h3 className="titulo-seccion">Nuestros Servicios</h3>
+                <p className="titulo-seccion1">
+                    "Descubre nuestros servicios especializados en trading en <strong>Academia Legan</strong>. Potenciamos tu éxito en el emocionante mundo de las inversiones con soluciones personalizadas y expertas."
+                </p>
+
+                <div className="fila">
+                    <div className="proyecto0">
+                        <a href="#">
+                            <div className="overlay"></div>
+                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <div className="info">
+                                <h4>Academia Legan</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="proyecto0">
+                        <a href="#">
+                            <div className="overlay"></div>
+                            <img src="/assets/perfildenis.jpg" alt="" />
+                            <div className="info">
+                                <h4>Trading X Denis</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="proyecto0">
+                        <a href="#">
+                            <div className="overlay"></div>
+                            <img src="/assets/perfiljorge.jpg" alt="" />
+                            <div className="info">
+                                <h4>Trading X Jorge </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div className="fila">
+                    <div className="proyecto0">
+                        <a href="#">
+                            <div className="overlay"></div>
+                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <div className="info">
+                                <h4>Progresemos juntos</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="proyecto0">
+                        <a href="#">
+                            <div className="overlay"></div>
+                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <div className="info">
+                                <h4>Mi Web</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="proyecto0">
+                        <a href="#">
+                            <div className="overlay"></div>
+                            <img src="/assets/perfillaptop.jpg" alt="" />
+                            <div className="info">
+                                <h4>proyecto6</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
 
-            <section>
-                <h2>Nuestros Cursos</h2>
-                <p>Descubre una amplia gama de cursos diseñados para traders de todos los niveles.</p>
-                <button>Ver Cursos</button>
+            <section id='pregunta'>
+                <div className="trading-content">
+                    <div className="trading-image">
+                        <img src="/assets/laptop.jpg" alt="Imagen de trading" />
+                    </div>
+                    <div className="trading-text">
+                        <h2>¿Cómo puede una estrategia digital sólida llevar tus operaciones de trading al siguiente nivel?</h2>
+                        <p>En el mundo del trading, cada segundo cuenta. Nuestra agencia de trading digital está aquí para brindarte las herramientas y la visibilidad que necesitas en tu página de inicio.</p>
+                        <p>En el mundo del trading, cada segundo cuenta. Nuestra agencia de trading digital está aquí para brindarte las herramientas y la visibilidad que necesitas en tu página de inicio.</p>
+                    </div>
+
+                </div>
             </section>
-            <section>
-                <h2>Nuestros Instructores</h2>
-                <p>Conoce a nuestros expertos instructores en trading y benefíciate de su experiencia.</p>
+
+            {/* Sección del carrusel */}
+            <section className="slider-container">
+                <h2 className="titulo-especifico" >Ellos son algunos Alumnos Satisfechos</h2>
+                <Slider {...settings}>
+                    <div><img src="/assets/1.png" alt="Alumno 1" /></div>
+                    <div><img src="/assets/2.png" alt="Alumno 2" /></div>
+                    <div><img src="/assets/3.png" alt="Alumno 3" /></div>
+                    <div><img src="/assets/4.png" alt="Alumno 4" /></div>
+                    <div><img src="/assets/5.png" alt="Alumno 5" /></div>
+                    <div><img src="/assets/6.png" alt="Alumno 6" /></div>
+                    <div><img src="/assets/7.png" alt="Alumno 7" /></div>
+                    <div><img src="/assets/8.png" alt="Alumno 8" /></div>
+                    <div><img src="/assets/9.png" alt="Alumno 9" /></div>
+                    <div><img src="/assets/10.png" alt="Alumno 10" /></div>
+                </Slider>
             </section>
+
+
+
             <section>
                 <h2>Preguntas Frecuentes</h2>
                 <p>Encuentra respuestas a las preguntas más comunes en nuestra sección de preguntas frecuentes.</p>

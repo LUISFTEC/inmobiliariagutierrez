@@ -1,0 +1,15 @@
+/* Aplica el tamaño de letra solo al h2 con la clase 'titulo-especifico' */
+.titulo-especifico {
+    text-align: center;
+    margin-bottom: 40px; /* Espacio entre el título y el carrusel */
+    font-size: 40px; /* Tamaño de letra específico para este h2 */
+}
+
+
+/* Estilos para las imágenes en el carrusel */
+.slider-container .slick-slide img {
+    max-width: 90%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    display: block; /* Asegura que la imagen no tenga espacio extra debajo */
+    margin: auto; /* Centra la imagen en el slide */
+}

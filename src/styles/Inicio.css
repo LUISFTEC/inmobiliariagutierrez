@@ -1,100 +1,247 @@
 /* Estilos para la cabecera */
 header {
-    background-image: url('../img/fondounidos.jpg');
-    color: #fff;
-    height: 100vh;
-    margin: 0;
-    flex-direction: row;
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/fondounidos.jpg");
+  color: #fff;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
 }
 
 .header-container {
-  width: 100%;
+  flex-direction: column;
 }
 
 .top-row {
-  display: flex; /* Alinea los elementos en horizontal */
+  display: flex;
+}
+
+.header-content {
+  text-align: left;
+  margin: 200px;
+  width: 100%;
+  max-width: calc(100% - 200px);
 }
 
 .header-background {
-  background-color: rgba(42, 34, 34, 1); /* Color azul */
-  width: 50%; /* Ancho al 50% */
-  height: 70vh; /* Altura al 50% de la altura de la ventana */
-  
+  background-color: rgba(42, 34, 34, 1);
+  /* Color azul */
+  width: 50%;
+  /* Ancho al 50% */
+  height: 70vh;
+  /* Altura al 50% de la altura de la ventana */
 }
 
-
 .rectangle-box {
-  width: 10%; /* Ancho al 50% */
-  height: 70vh; /* Altura al 50% de la altura de la ventana */
-
+  width: 10%;
+  /* Ancho al 50% */
+  height: 70vh;
+  /* Altura al 50% de la altura de la ventana */
 }
 
 .bottom-row {
-  width: 100%; /* Ocupa el ancho completo */
+  width: 100%;
+  /* Ocupa el ancho completo */
 }
 
 .rectangle-box1 {
-  width: 50%; /* Ancho al 50% */
-  height: 20vh; /* Altura al 50% de la altura de la ventana */
-  
+  width: 50%;
+  /* Ancho al 50% */
+  height: 20vh;
+  /* Altura al 50% de la altura de la ventana */
 }
 
-  
-  .header-content {
-    width: 100%;
-    padding: 100px;
-  
-  }
-  
-  header h1 {
-    font-size: 50px;
-  }
-  
-  .header-conten p {
-    text-align: justify;
+header h1 {
+  font-size: 50px;
 }
 
-
-
-
-
-
-
-
-
-
+.header-conten p {
+  text-align: justify;
+}
 
 /* Estilos para las secciones de información */
 section {
-    padding: 40px;
-    border-bottom: 1px solid #ccc;
+  padding: 40px;
+  border-bottom: 1px solid #ccc;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: justify;
 }
 
 /* Estilos para los botones */
 button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background-color: rgba(52, 73, 94, 0.7);
+  margin: 0 10px;
+  border: 2px solid #ffffff;
+  align-items: center;
 }
 
 button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
+
+/* Estilos para centrar en modo responsivo */
+@media (max-width: 1450px) {
+  .header-background {
+    width: 65%;
+    height: 70vh;
+    /* Altura al 50% de la altura de la ventana */
+  }
+
+  .rectangle-box1 {
+    width: 65%;
+  }
+
+  header h1 {
+    font-size: 35px;
+    max-width: 500px;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 500px;
+  }
+}
+
+/* Estilos para centrar en modo responsivo */
+@media (max-width: 1200px) {
+  .header-background {
+    width: 75%;
+    height: 70vh;
+    /* Altura al 50% de la altura de la ventana */
+  }
+
+  .rectangle-box1 {
+    width: 75%;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: 100vh;
+  }
+
+  .header-content {
+    margin: 200px auto;
+  }
+
+  .header-background {
+    width: 100%;
+    height: 70vh;
+    /* Altura al 50% de la altura de la ventana */
+  }
+
+  .rectangle-box {
+    display: none;
+  }
+
+  .rectangle-box1 {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    margin: 100px auto;
+  }
+
+  .header-background {
+    width: 100%;
+    height: 100vh;
+    /* Altura al 50% de la altura de la ventana */
+  }
+
+  .rectangle-box1 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-content {
+    margin: 80px auto;
+  }
+
+  .rectangle-box {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .rectangle-box1 {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .header-content {
+    margin: 40px auto;
+  }
+
+  .rectangle-box {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .rectangle-box1 {
+    display: none;
+  }
+}
+

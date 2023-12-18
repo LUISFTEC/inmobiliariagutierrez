@@ -1,0 +1,58 @@
+#pregunta {
+  background: #e9eff5;
+  background-size: cover;
+
+}
+
+/* Estilos generales para la sección de trading */
+.trading-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite ajustes en pantallas más pequeñas */
+  justify-content: center;
+  align-items: center;
+  background-color: #353333; /* Color de fondo */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 60%; /* Ancho del contenedor */
+  margin-left: auto; /* Margen automático a la izquierda */
+  margin-right: auto; /* Margen automático a la derecha */
+}
+
+
+/* Estilos para el texto dentro de la sección de trading */
+.trading-text {
+    flex-basis: 50%; /* Base para el tamaño en flex */
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: #ffffff; /* Color del texto */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilos para la imagen dentro de la sección de trading */
+.trading-image {
+    flex-basis: 50%; /* Base para el tamaño en flex */
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+.trading-image img {
+    max-width: 70%; /* Asegura que la imagen sea responsiva */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas más pequeñas (responsive design) */
+@media (max-width: 768px) {
+    .trading-content {
+        flex-direction: column;
+    }
+
+    .trading-text, .trading-image {
+        flex-basis: auto; /* Tamaño automático para ajustarse al contenedor */
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
