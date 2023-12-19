@@ -131,7 +131,7 @@ function Inicio() {
 
             {/* Sección del carrusel */}
             <section className="slider-container">
-                <h2 className="titulo-especifico" >Ellos son algunos Alumnos Satisfechos</h2>
+                <h2 className="titulo-especifico" >Ellos son algunos de nuestros Alumnos:</h2>
                 <Slider {...settings}>
                     <div><img src="./assets/1.png" alt="Alumno 1" /></div>
                     <div><img src="./assets/2.png" alt="Alumno 2" /></div>

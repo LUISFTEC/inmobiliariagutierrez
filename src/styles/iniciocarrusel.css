@@ -1,3 +1,11 @@
+.slider-container {
+    background-color: #9c5151; /* Cambia #FF0000 por el código de color que desees */
+    /* Otros estilos que desees aplicar */
+}
+
+
+
+
 /* Aplica el tamaño de letra solo al h2 con la clase 'titulo-especifico' */
 .titulo-especifico {
     text-align: center;
@@ -8,8 +16,19 @@
 
 /* Estilos para las imágenes en el carrusel */
 .slider-container .slick-slide img {
-    max-width: 90%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 80%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de las imágenes */
     display: block; /* Asegura que la imagen no tenga espacio extra debajo */
     margin: auto; /* Centra la imagen en el slide */
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .titulo-especifico {
+        text-align: center;
+        margin-bottom: 40px; /* Espacio entre el título y el carrusel */
+        font-size: 30px; /* Tamaño de letra específico para este h2 */
+    }
+    
 }

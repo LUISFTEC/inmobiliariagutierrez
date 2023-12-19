@@ -1,15 +1,15 @@
 /* Estilos para la sección de proyectos */
 #proyecto {
     text-align: center;
-    padding: 80px 0;
-    width: 100%;
+    padding: 20px 0;
     display: flex;
     background: rgb(255, 255, 255);
     align-items: center;
     background-size: cover;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    
 }
 
 /* Título de la sección */
@@ -32,7 +32,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 60%;
+
 }
 
 /* Estilos individuales para cada proyecto */
@@ -86,7 +87,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 50%;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
     /* Fondo oscuro */
@@ -105,11 +106,28 @@
 @media (max-width: 1200px) {
 
 
-    #proyecto .proyecto0 {
-        width: 45%;
-        /* Dos proyectos por fila en pantallas más pequeñas */
+    #proyecto {
+        height: auto;        
+        
     }
 
+    #proyecto .fila {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    
+    }
+
+
+    #proyecto .proyecto0 {
+        width: 35%; /* Cambiado a 45% para mostrar dos elementos por fila */
+    }
+
+    #proyecto .fila {
+        flex-wrap: wrap; /* Asegúrate de que flex-wrap esté configurado como "wrap" */
+    }
+    
    
 }
 
@@ -119,6 +137,13 @@
         width: 75%;
         /* Dos proyectos por fila en pantallas más pequeñas */
     }
+
+    #proyecto {
+        
+        padding:20px;
+
+        
+    }
 }
 
 @media (max-width: 480px) {
@@ -126,4 +151,28 @@
         width: 90%;
         /* Un proyecto por fila en pantallas muy pequeñas */
     }
+
+    #proyecto .proyecto0 .info {
+        position: absolute;
+        
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 380px) {
+    #proyecto .proyecto0 {
+        width: 90%;
+        /* Un proyecto por fila en pantallas muy pequeñas */
+    }
+
+    #proyecto {
+        
+        padding:20px;
+
+        
+    }
+
+
+  
 }

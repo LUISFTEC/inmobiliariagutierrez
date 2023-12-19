@@ -45,6 +45,21 @@
     border-radius: 5px;
 }
 
+
+@media (max-width: 1200px) {
+    .trading-content {
+        display: flex;
+        flex-wrap: wrap; /* Permite ajustes en pantallas más pequeñas */
+        justify-content: center;
+        align-items: center;
+        background-color: #353333; /* Color de fondo */
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%; /* Ancho del contenedor */
+        margin-left: auto; /* Margen automático a la izquierda */
+        margin-right: auto; /* Margen automático a la derecha */
+      }
+}
 /* Estilos para pantallas más pequeñas (responsive design) */
 @media (max-width: 768px) {
     .trading-content {
@@ -56,3 +71,5 @@
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     }
 }
+
+

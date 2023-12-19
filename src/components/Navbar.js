@@ -27,6 +27,9 @@ function Navbar() {
         <li><Link to="/vip"><i className="fas fa-star"></i> VIP</Link></li>
         <li><Link to="/iniciar-sesion"><i className="fas fa-sign-in-alt"></i> Iniciar Sesión</Link></li>
         <li><Link to="/registrarse" className={`register-btn ${isMenuOpen ? 'centered' : ''}`}>Registrarse</Link></li>
+        <li className="close-icon" onClick={toggleMenu}>
+          <i className="fas fa-times"></i> {/* Icono "X" */}
+        </li>
       </ul>
     </nav>
   );
