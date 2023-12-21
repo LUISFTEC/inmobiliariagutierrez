@@ -25,12 +25,45 @@ function Inicio() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         rtl: true, // Habilita el desplazamiento de derecha a izquierda
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     };
+
     return (
         <div>
             <header className="header-container">
@@ -45,8 +78,9 @@ function Inicio() {
                                 estamos aquí para guiarte. Únete a nuestra comunidad y potencia
                                 tus habilidades en el mercado financiero.
                             </p>
-                            <button>Ver Cursos</button>
-                            <button>Empieza Ya</button>
+                            <button className="boton-estandar">Ver Cursos</button>
+                            <button className="boton-estandar">Empieza Ya</button>
+
                         </div>
                     </div>
                     <img src={verticalImage} alt="Descripción de la imagen" className="rectangle-box" />
@@ -156,8 +190,6 @@ function Inicio() {
 
                 </Slider>
             </section>
-
-
 
             <section>
                 <h2>Preguntas Frecuentes</h2>

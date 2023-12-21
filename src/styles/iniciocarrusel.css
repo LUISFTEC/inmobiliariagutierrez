@@ -4,8 +4,6 @@
 }
 
 
-
-
 /* Aplica el tamaño de letra solo al h2 con la clase 'titulo-especifico' */
 .titulo-especifico {
     text-align: center;
@@ -21,6 +19,9 @@
     display: block; /* Asegura que la imagen no tenga espacio extra debajo */
     margin: auto; /* Centra la imagen en el slide */
     border-radius: 20px;
+    margin-right: 1px; /* Agrega un margen derecho entre las imágenes */
+    margin-left: 1px; /* Agrega un margen izquierdo entre las imágenes */
+
 }
 
 

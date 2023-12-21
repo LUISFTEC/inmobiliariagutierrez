@@ -97,16 +97,21 @@ li a:hover {
   cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
   display: none; /* Oculta por defecto y se mostrará en pantallas más pequeñas */
   padding: 10px;
+  background: none; /* Elimina cualquier fondo del botón */
+  border: none; /* Elimina cualquier borde del botón */
 }
 
 .close-icon {
   position: absolute;
   top: 0; /* Ajusta la posición vertical según tus necesidades */
-  right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+  right: 4%; /* Ajusta la posición horizontal según tus necesidades */
   cursor: pointer;
   display: none;
+  padding: 10px;
   color: #fff; /* Cambia el color del icono "X" */
-  font-size: 30px;
+  font-size: 24px;
+  background: none; /* Elimina cualquier fondo del botón */
+  border: none; /* Elimina cualquier borde del botón */
 }
 
 @media (max-width: 1200px) {
@@ -192,11 +197,11 @@ li a:hover {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
 
   .menu {
    
-    width: 100px;
+    width: 150px;
     
   }
 

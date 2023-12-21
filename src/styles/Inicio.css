@@ -21,10 +21,12 @@ header {
 }
 
 .header-content {
-  text-align: left;
-  margin: 200px;
-  width: 100%;
-  max-width: calc(100% - 200px);
+  margin: 80px auto 0;
+  max-width: 700px;
+  padding: 20px;
+  margin-left: 250px; 
+  justify-content: flex-start; /* Centra el contenido a la izquierda */
+  align-items: center;
 }
 
 .header-background {
@@ -82,7 +84,7 @@ p {
 }
 
 /* Estilos para los botones */
-button {
+.boton-estandar {
   color: #fff;
   padding: 10px 20px;
   font-size: 18px;
@@ -92,12 +94,12 @@ button {
   letter-spacing: 3px;
   font-weight: bold;
   background-color: rgba(52, 73, 94, 0.7);
-  margin: 0 10px;
+  margin: 10px;
   border: 2px solid #ffffff;
   align-items: center;
 }
 
-button:hover {
+.boton-estandar:hover {
   background-color: #2980b9;
 }
 
@@ -186,6 +188,10 @@ button:hover {
 }
 
 @media (max-width: 700px) {
+
+ 
+  
+  
   .header-content {
     margin: 100px auto;
   }
@@ -213,6 +219,7 @@ button:hover {
   }
   .header-content {
     margin: 80px auto;
+    
   }
 
   .rectangle-box {
@@ -235,26 +242,34 @@ button:hover {
 }
 
 @media (max-width: 390px) {
-  .header-content {
-    margin: 40px auto;
+
+  header {
+    width: 100%; /* En modo responsivo, el header ocupa el 100% del ancho de la pantalla */
+    height: auto; /* La altura se ajustará automáticamente según el contenido */
   }
+
+  
 
   .rectangle-box {
     display: none;
   }
 
   header h1 {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: justify;
+    letter-spacing: 0.5px; /* Ajusta el espaciado entre letras según tus preferencias */
+    word-spacing: 1px; /* Ajusta la separación entre palabras según tus preferencias */
   }
+  
 
   .rectangle-box1 {
     display: none;
   }
+
 }
 
