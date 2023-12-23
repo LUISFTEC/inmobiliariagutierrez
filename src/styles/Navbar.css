@@ -210,6 +210,24 @@ li a:hover {
     padding: 10px;
   }
   .logo img {
+    width: 150px; /* Más pequeño en pantallas más estrechas */
+  }
+  /* Otros ajustes responsivos */
+}
+
+@media (max-width: 240px) {
+
+  .menu {
+   
+    width: 150px;
+    
+  }
+
+  .hamburger-icon {
+    font-size: 15px; /* Ajusta el tamaño del icono */
+    padding: 10px;
+  }
+  .logo img {
     width: 100px; /* Más pequeño en pantallas más estrechas */
   }
   /* Otros ajustes responsivos */

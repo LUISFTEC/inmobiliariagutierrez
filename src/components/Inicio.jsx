@@ -70,7 +70,7 @@ function Inicio() {
                 <div className="top-row">
                     <div className="header-background">
                         <div className="header-content">
-                            <h1>Academia de Trading <br />Aprende con los Mejores</h1>
+                            <h1>Academia de Trading<br />Aprende con los Mejores</h1>
                             <p>
                                 Explora el emocionante mundo del trading con nosotros.
                                 Ya seas un principiante en busca de conocimientos básicos

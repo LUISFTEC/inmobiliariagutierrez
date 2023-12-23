@@ -188,9 +188,6 @@ p {
 }
 
 @media (max-width: 700px) {
-
- 
-  
   
   .header-content {
     margin: 100px auto;
@@ -231,7 +228,7 @@ p {
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: justify;
   }
@@ -241,7 +238,7 @@ p {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
 
   header {
     width: 100%; /* En modo responsivo, el header ocupa el 100% del ancho de la pantalla */
@@ -255,11 +252,11 @@ p {
   }
 
   header h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     text-align: justify;
     letter-spacing: 0.5px; /* Ajusta el espaciado entre letras según tus preferencias */

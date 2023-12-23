@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Inicio from './components/Inicio'; // Importa el componente Inicio desde el archivo correspondiente
 import CourseSection from './components/CourseSection';
 
@@ -17,7 +18,7 @@ function App() {
                     <Route path="/cursos" element={<CourseSection />} />
                     {/* Otras rutas */}
                 </Routes>
-
+                <Footer />
             </div>
         </Router>
     );
