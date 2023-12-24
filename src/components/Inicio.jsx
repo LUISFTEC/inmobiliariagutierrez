@@ -133,7 +133,7 @@ function Inicio() {
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Progresemos juntos</h4>
+                                <h4>Webinars de Trading</h4>            
                             </div>
                         </a>
                     </div>
@@ -142,7 +142,7 @@ function Inicio() {
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Mi Web</h4>
+                                <h4>Soporte de Trading</h4>
                             </div>
                         </a>
                     </div>
@@ -151,7 +151,7 @@ function Inicio() {
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>proyecto6</h4>
+                                <h4>Fundamentos de Trading</h4>
                             </div>
                         </a>
                     </div>

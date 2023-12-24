@@ -13,24 +13,19 @@ export default function App() {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.facebook.com/LeganFX' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://twitter.com/AcademiaLegan' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='twitter' />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='google' />
-          </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/academialegan/' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
+          <a href='https://www.tiktok.com/@academialegan' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
+            <MDBIcon color='secondary' fab icon='tiktok' />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='github' />
-          </a>
+
         </div>
       </section>
 

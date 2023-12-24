@@ -1,0 +1,44 @@
+#acerca-nosotros {
+  background-color: white; /* Fondo blanco para la sección */
+}
+
+#acerca-nosotros .container {
+  padding: 20px 0;
+}
+
+#acerca-nosotros .body {
+  position: relative; /* Para la línea de conexión */
+}
+
+#acerca-nosotros article {
+  margin-bottom: 20px; /* Espacio entre artículos */
+}
+
+#acerca-nosotros .numero {
+  width: 30px;
+  height: 30px;
+  line-height: 30px; /* Centrar el texto verticalmente */
+  border-radius: 50%; /* Hacerlo circular */
+  background-color: #007bff; /* Color de fondo del círculo */
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin: 0 auto 10px; /* Centrar el círculo y añadir espacio debajo */
+  font-weight: bold;
+}
+
+#acerca-nosotros .texto p {
+  color: black; /* Color del texto */
+}
+
+/* Estilo para la línea que conecta los números */
+#acerca-nosotros .body::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Ancho de la línea */
+  background-color: #007bff; /* Color de la línea */
+  z-index: -1; /* Colocar detrás de los artículos */
+}
+

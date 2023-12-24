@@ -20,7 +20,6 @@ function Navbar() {
         <i className="fas fa-bars"></i>
       </button>
 
-
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <li><Link to="/inicio"><i className="fas fa-home"></i> Inicio</Link></li>
         <li><Link to="/nosotros"><i className="fas fa-users"></i> Nosotros</Link></li>

@@ -1,5 +1,7 @@
 nav {
   width: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-bottom: 0.5px solid #000000;
   display: flex;
   position: absolute;
   justify-content: space-between;
@@ -8,16 +10,16 @@ nav {
   padding-right: 4%;
   box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
   z-index: 10;
+   /* Agrega un margen superior de 20px */
 }
 
 
 nav li {
-  margin-right: 5px;
+
   /* Ajusta el margen derecho según tus necesidades */
   padding: 5px 0;
   /* Ajusta el espaciado vertical según tus necesidades */
 }
-
 
 nav a {
   font-family: 'Arial', sans-serif;
@@ -25,8 +27,15 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 10px;
-  margin-right: 10px;
+  
   /* Ajusta el margen como necesites */
+}
+ul.menu{
+  padding: 10px;
+  margin: 0;
+}
+ul.menu li {
+  margin-right: 10px; /* Agrega margen derecho entre los elementos */
 }
 
 .logo {
@@ -37,26 +46,22 @@ nav a {
 ul {
   list-style: none;
   display: flex;
-  padding: 0;
-}
-
-li {
-  margin-right: 5px;
-  padding: 5px 10px;
-}
-
-li a {
-
-  padding: 10px 10px;
-  /* Ajusta según necesites */
 }
 
 
-li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  /* Tu estilo de sombra */
-  border-radius: 2px;
+nav a:link, nav a:visited {
+  color: white; /* Color para enlaces no visitados y visitados */
 }
+
+nav a:hover {
+  color: white; /* Color al pasar el mouse sobre el enlace */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo al pasar el mouse */
+}
+
+nav a:active {
+  color: white; /* Color al hacer clic en el enlace */
+}
+
 
 .register-btn {
   background-color: red;
@@ -78,11 +83,8 @@ li a:hover {
 
 .logo img {
   height: auto;
-  /* Esto mantiene la proporción de aspecto */
+
   width: 200px;
-  /* Ajusta esto según tus necesidades */
-  margin: 0 15px;
-  /* Ajusta el valor '15px' según tus necesidades */
 }
 
 .logo img:hover {
@@ -113,6 +115,9 @@ li a:hover {
   background: none; /* Elimina cualquier fondo del botón */
   border: none; /* Elimina cualquier borde del botón */
 }
+
+
+
 
 @media (max-width: 1200px) {
   .hamburger-icon {
