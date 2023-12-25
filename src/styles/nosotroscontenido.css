@@ -1,0 +1,42 @@
+#acerca-nosotros1 {
+    background-color: #e9eff5; /* Color de fondo para la sección */
+    padding: 100px; /* Espaciado interno superior e inferior */
+  }
+  
+  #acerca-nosotros1 h2 {
+    text-align: center; /* Centrar el título */
+    font-size: 30px; /* Tamaño del título */
+    margin-bottom: 50px; /* Espacio inferior del título */
+    color: black;
+    padding: 0 20px; /* Añade un padding horizontal */
+  }
+  
+  #acerca-nosotros1 .split-columns {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: flex-start;
+}
+
+#acerca-nosotros1 .column {
+    margin: 0 10px; /* Ajusta este valor para controlar el espacio entre las columnas */
+    padding: 20px;     
+}
+
+  
+  #acerca-nosotros1 .column p {
+    margin: 10px 0; /* Espacio entre párrafos */
+    font-size: 18px; /* Tamaño de fuente para el texto */
+    color: #333; /* Color del texto */
+  }
+
+  .column p .fa-thumbs-up {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Diámetro del círculo */
+    height: 30px; /* Diámetro del círculo */
+    font-size: 14px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio a la derecha del icono */
+    text-align: center;
+    color: #007bff;
+}

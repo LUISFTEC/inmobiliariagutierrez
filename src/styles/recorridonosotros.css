@@ -11,34 +11,39 @@
 }
 
 #acerca-nosotros article {
-  margin-bottom: 20px; /* Espacio entre artículos */
+  padding: 50px;
 }
 
+#acerca-nosotros .texto p {
+  color: black; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente deseado */
+  margin-top: 10px; /* Espacio superior del párrafo */
+  margin-bottom: 10px; /* Espacio inferior del párrafo */
+  text-align: center; /* Centrar el texto horizontalmente */
+  display: flex; /* Usa flexbox para centrar verticalmente el texto */
+  justify-content: center; /* Centra verticalmente el texto en el contenedor */
+  align-items: center; /* Centra horizontalmente el texto en el contenedor */
+}
+
+
 #acerca-nosotros .numero {
-  width: 30px;
-  height: 30px;
-  line-height: 30px; /* Centrar el texto verticalmente */
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* Centrar el texto verticalmente */
   border-radius: 50%; /* Hacerlo circular */
   background-color: #007bff; /* Color de fondo del círculo */
   color: white; /* Color del texto */
   text-align: center; /* Centrar el texto horizontalmente */
-  margin: 0 auto 10px; /* Centrar el círculo y añadir espacio debajo */
+  margin: 0 auto 50px; /* Centrar el círculo y añadir espacio debajo */
   font-weight: bold;
+  z-index: 2;
 }
 
 #acerca-nosotros .texto p {
   color: black; /* Color del texto */
 }
 
-/* Estilo para la línea que conecta los números */
-#acerca-nosotros .body::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px; /* Ancho de la línea */
-  background-color: #007bff; /* Color de la línea */
-  z-index: -1; /* Colocar detrás de los artículos */
-}
+
+
 
