@@ -96,7 +96,7 @@ nav a:active {
   font-size: 24px; /* Ajusta el tamaño del icono */
   cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse */
   display: none; /* Oculta por defecto y se mostrará en pantallas más pequeñas */
-  padding: 10px;
+
   background: none; /* Elimina cualquier fondo del botón */
   border: none; /* Elimina cualquier borde del botón */
 }

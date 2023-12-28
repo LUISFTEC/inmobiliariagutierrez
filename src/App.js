@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Nosotros from './components/nosotros';
 import Footer from './components/Footer';
 import Servicios from './components/Servicios';
+import Contacto from './components/Contacto';
 import Inicio from './components/Inicio'; // Importa el componente Inicio desde el archivo correspondiente
 import CourseSection from './components/CourseSection';
 import ScrollToTop from './utils/ScrollTop'; // Asegúrate de que la ruta de importación es correcta
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/nosotros" element={<Nosotros />} />
                     <Route path="/cursos" element={<CourseSection />} />
                     <Route path="/servicios" element={<Servicios />} />
+                    <Route path="/contacto" element={<Contacto />} />
                     {/* Otras rutas */}
                 </Routes>
                 <Footer />

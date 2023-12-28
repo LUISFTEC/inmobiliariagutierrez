@@ -1,0 +1,125 @@
+/* Estilos para el contenedor principal */
+.contactos-container {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh); /* Ajusta según la altura de tu navbar */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el título */
+.contactos-container h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el título y el formulario */
+  color: #000000;
+}
+
+/* Estilos para el formulario */
+.contactos-container form {
+  width: 100%;
+  max-width: 500px; /* Ancho máximo para el formulario */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Estilos para los elementos del formulario */
+.contactos-container div {
+  margin-bottom: 15px;
+}
+
+.contactos-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.contactos-container input[type="text"],
+.contactos-container input[type="email"],
+.contactos-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactos-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contactos-container button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactos-container button:hover {
+  background-color: #004494;
+}
+
+/* Estilos para la sección de consentimiento */
+.contactos-container .consentimiento-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contactos-container .consentimiento-container input[type="checkbox"] {
+  margin-right: 10px; /* Espacio entre la casilla y el texto */
+}
+
+.mensaje-exito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.mensaje-exito p {
+  color: #000000; /* Color verde para el mensaje de éxito */
+  margin-bottom: 15px;
+}
+
+.mensaje-exito button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mensaje-exito h3 {
+  margin-top: 20px; /* Espacio superior para separar del resto del contenido */
+  font-size: 2.5em; /* Tamaño del título */
+  color: #070707; /* Puedes cambiar el color si lo deseas */
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) { /* Para pantallas pequeñas */
+  .contactos-container {
+    padding-top: 80px;
+  }
+}
