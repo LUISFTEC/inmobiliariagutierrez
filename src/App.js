@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Nosotros from './components/nosotros';
 import Footer from './components/Footer';
+import Servicios from './components/Servicios';
 import Inicio from './components/Inicio'; // Importa el componente Inicio desde el archivo correspondiente
 import CourseSection from './components/CourseSection';
+import ScrollToTop from './utils/ScrollTop'; // Asegúrate de que la ruta de importación es correcta
+
 
 import './App.css';
 
@@ -18,9 +21,13 @@ function App() {
                     <Route path="/inicio" element={<Inicio />} />
                     <Route path="/nosotros" element={<Nosotros />} />
                     <Route path="/cursos" element={<CourseSection />} />
+                    <Route path="/servicios" element={<Servicios />} />
                     {/* Otras rutas */}
                 </Routes>
                 <Footer />
+                <ScrollToTop/>
+                
+
             </div>
         </Router>
     );

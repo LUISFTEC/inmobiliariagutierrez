@@ -1,0 +1,19 @@
+.scroll-to-top {
+  position: fixed; /* Posiciona el botón fijamente en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la derecha */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  border: none; /* Elimina el borde por defecto */
+  outline: none; /* Elimina el contorno al hacer foco */
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor a tipo puntero */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}

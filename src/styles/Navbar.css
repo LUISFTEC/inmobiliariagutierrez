@@ -10,14 +10,12 @@ nav {
   padding-right: 4%;
   box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
   z-index: 10;
-   /* Agrega un margen superior de 20px */
 }
 
 
 nav li {
-
   /* Ajusta el margen derecho según tus necesidades */
-  padding: 5px 0;
+  padding: 15px 0;
   /* Ajusta el espaciado vertical según tus necesidades */
 }
 
@@ -31,7 +29,6 @@ nav a {
   /* Ajusta el margen como necesites */
 }
 ul.menu{
-  padding: 10px;
   margin: 0;
 }
 ul.menu li {
@@ -47,6 +44,7 @@ ul {
   list-style: none;
   display: flex;
 }
+
 
 
 nav a:link, nav a:visited {
@@ -172,11 +170,7 @@ nav a:active {
 
 @media (max-width: 768px) {
 
-  .menu {
-   
-    width: 200px;
-    
-  }
+ 
   .logo img {
     width: 200px; /* Más pequeño en pantallas más estrechas */
   }
@@ -187,7 +181,7 @@ nav a:active {
 
   .menu {
    
-    width: 150px;
+    width: 250px;
     
   }
 
@@ -206,7 +200,7 @@ nav a:active {
 
   .menu {
    
-    width: 150px;
+    width: 200px;
     
   }
 
