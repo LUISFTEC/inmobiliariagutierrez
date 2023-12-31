@@ -99,7 +99,7 @@ function Inicio() {
 
                 <div className="fila">
                     <div className="proyecto0">
-                        <a href="#">
+                        <a href='https://www.facebook.com/LeganFX'>
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
 
@@ -109,7 +109,7 @@ function Inicio() {
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href="#">
+                        <a href='https://www.facebook.com/LeganFX'>
                             <div className="overlay"></div>
                             <img src={images['perfildenis.jpg']} alt="Perfil Laptop" />
                             <div className="info">
@@ -118,7 +118,7 @@ function Inicio() {
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href="#">
+                        <a href='https://www.facebook.com/LeganFX'>
                             <div className="overlay"></div>
                             <img src={images['perfiljorge.jpg']} alt="Perfil Laptop" />
                             <div className="info">
@@ -129,7 +129,7 @@ function Inicio() {
                 </div>
                 <div className="fila">
                     <div className="proyecto0">
-                        <a href="#">
+                        <a href='https://www.facebook.com/LeganFX'>
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
                             <div className="info">
@@ -138,7 +138,7 @@ function Inicio() {
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href="#">
+                        <a href='https://www.facebook.com/LeganFX'>
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
                             <div className="info">
@@ -147,7 +147,7 @@ function Inicio() {
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href="#">
+                        <a href='https://www.facebook.com/LeganFX'>
                             <div className="overlay"></div>
                             <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
                             <div className="info">

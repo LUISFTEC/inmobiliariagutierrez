@@ -1,7 +1,6 @@
-// ScrollToTop.jsx
 import React, { useState, useEffect } from 'react';
-import '../styles/ScrollToTop.css'; // Importa el archivo CSS
-import { FaArrowUp } from 'react-icons/fa'; // Importa el ícono de flecha hacia arriba
+import '../styles/ScrollToTop.css';
+import { FaArrowUp } from 'react-icons/fa';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,15 +14,27 @@ const ScrollToTop = () => {
   };
 
   const scrollToTop = () => {
-    const scrollStep = window.scrollY / 10; // Divide la posición actual en 10 pasos
-    const intervalId = setInterval(() => {
-      if (window.scrollY > 0) {
-        window.scroll(0, window.scrollY - scrollStep);
-      } else {
-        clearInterval(intervalId);
+    const c = window.scrollY;
+    const duration = 500; // Duración en ms
+    let start = null;
+
+    const step = timestamp => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const r = progress / duration;
+
+      const move = c - c * easeOutQuad(r);
+      window.scrollTo(0, move);
+
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
       }
-    }, 50); // Ajusta este valor para cambiar la velocidad del desplazamiento
+    };
+
+    window.requestAnimationFrame(step);
   };
+
+  const easeOutQuad = t => t * (2 - t);
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
@@ -35,7 +46,7 @@ const ScrollToTop = () => {
   return (
     isVisible && (
       <button onClick={scrollToTop} className="scroll-to-top">
-        <FaArrowUp /> {/* Ícono de flecha hacia arriba */}
+        <FaArrowUp />
       </button>
     )
   );
