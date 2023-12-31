@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
     return (
-        <Router basename="/academia-legan">
+        <Router >
             <div className="App">
                 <Navbar />
                 <Routes>
@@ -27,8 +27,7 @@ function App() {
                     {/* Otras rutas */}
                 </Routes>
                 <Footer />
-                <ScrollToTop/>
-                
+                <ScrollToTop/>            
 
             </div>
         </Router>
