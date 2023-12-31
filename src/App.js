@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
     return (
-        <Router >
+        <Router basename="/academia-legan">
             <div className="App">
                 <Navbar />
                 <Routes>
