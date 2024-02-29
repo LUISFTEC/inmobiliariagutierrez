@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/inmobiliariagutierrez/static/css/main.a8074885.css",
+    "main.css": "/inmobiliariagutierrez/static/css/main.ffb50e8c.css",
     "main.js": "/inmobiliariagutierrez/static/js/main.66073a5b.js",
     "static/js/496.c47a8e36.chunk.js": "/inmobiliariagutierrez/static/js/496.c47a8e36.chunk.js",
     "static/media/iniciofondo.mp4": "/inmobiliariagutierrez/static/media/iniciofondo.374a8e6a959ebfd3779a.mp4",
@@ -32,12 +32,12 @@
     "static/media/slick.ttf": "/inmobiliariagutierrez/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/inmobiliariagutierrez/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/inmobiliariagutierrez/index.html",
-    "main.a8074885.css.map": "/inmobiliariagutierrez/static/css/main.a8074885.css.map",
+    "main.ffb50e8c.css.map": "/inmobiliariagutierrez/static/css/main.ffb50e8c.css.map",
     "main.66073a5b.js.map": "/inmobiliariagutierrez/static/js/main.66073a5b.js.map",
     "496.c47a8e36.chunk.js.map": "/inmobiliariagutierrez/static/js/496.c47a8e36.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8074885.css",
+    "static/css/main.ffb50e8c.css",
     "static/js/main.66073a5b.js"
   ]
 }
