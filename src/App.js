@@ -14,14 +14,14 @@ import './App.css';
 
 function App() {
     return (
-        <Router basename="/academia-legan">
+        <Router basename="/inmobiliariagutierrez">
             <div className="App">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Inicio />} /> {/* Ruta inicial */}
                     <Route path="/inicio" element={<Inicio />} />
                     <Route path="/nosotros" element={<Nosotros />} />
-                    <Route path="/cursos" element={<CourseSection />} />
+                    <Route path="/promociones" element={<CourseSection />} />
                     <Route path="/servicios" element={<Servicios />} />
                     <Route path="/contacto" element={<Contacto />} />
                     {/* Otras rutas */}

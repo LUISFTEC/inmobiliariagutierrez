@@ -4,7 +4,7 @@
     justify-content: center; /* Centra verticalmente los elementos en el contenedor */
     align-items: center; /* Centra horizontalmente los elementos en el contenedor */
     background:linear-gradient(rgba(5, 7, 12, 0.35),rgba(5, 7, 12, 0.35)),
-   url('../img/fondomar.jpg');
+   url('../img/portada.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;

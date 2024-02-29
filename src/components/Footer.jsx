@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import logo from '../img/logofoter.png'; // Asegúrate de que la ruta sea correcta
+import logo from '../img/logo.png'; // Asegúrate de que la ruta sea correcta
 
 
 export default function App() {
@@ -13,16 +13,16 @@ export default function App() {
         </div>
 
         <div>
-          <a href='https://www.facebook.com/LeganFX' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
+          <a href='https://www.facebook.com/InmobiliariaGutierrez.T' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='https://twitter.com/AcademiaLegan' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
+          <a href='https://twitter.com/' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='twitter' />
           </a>
-          <a href='https://www.instagram.com/academialegan/' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
+          <a href='https://www.instagram.com/inmobiliaria_gutierrez_/' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='https://www.tiktok.com/@academialegan' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
+          <a href='https://www.tiktok.com/' className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
             <MDBIcon color='secondary' fab icon='tiktok' />
           </a>
 
@@ -34,10 +34,11 @@ export default function App() {
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <img src={logo} alt="Academia Legan" className='me-3' style={{ maxWidth: '100%', height: 'auto' }} />
+                <img src={logo} alt="inmobiliaria gutierrez" className='me-3' style={{ maxWidth: '100%', height: 'auto' }} />
               </h6>
               <p>
-                Academia Legan, tu puerta al trading efectivo. Cursos liderados por expertos, para operar con éxito y confianza.
+                Inmobiliaria GUTIERREZ T.E., tu socio en el desarrollo de proyectos inmobiliarios.
+                Confía en nuestro equipo de profesionales para garantizar el éxito en tus inversiones.
               </p>
 
             </MDBCol>
@@ -46,22 +47,22 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Productos</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Forex
+                Proyectos 
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Criptomonedas
+                Arrendamientos
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Acciones
+                Ventas Inmuebles
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Materias Primas
+                Consultoría
                 </a>
               </p>
             </MDBCol>
@@ -94,7 +95,7 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Contacto</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />
-                Perú Lima, s 0000, PE
+                Perú Trujillo, s 0000, PE
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />
@@ -111,10 +112,12 @@ export default function App() {
         </MDBContainer>
       </section>
 
+
+
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © {new Date().getFullYear()} Derechos reservados:
         <a className='text-reset fw-bold' href='tu-sitio-web'>
-          Academia Legan
+          Inmobiliaria Gutierrez
         </a>
       </div>
 

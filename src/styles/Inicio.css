@@ -1,6 +1,6 @@
 /* Estilos para la cabecera */
 header {
-  background-image: url("../img/fondounidos.jpg");
+  position: relative;
   color: #fff;
   height: 100vh;
   width: auto;
@@ -10,6 +10,7 @@ header {
   align-items: flex-start;
   background-size: cover;
   background-position: center;
+  z-index: 2;
 }
 
 .header-container {
@@ -24,13 +25,13 @@ header {
   margin: 80px auto 0;
   max-width: 700px;
   padding: 20px;
-  margin-left: 250px; 
+  margin-left: 250px;
   justify-content: flex-start; /* Centra el contenido a la izquierda */
   align-items: center;
 }
 
 .header-background {
-  background-color: rgba(42, 34, 34, 1);
+  background-color: rgba(42, 34, 34, 0.8);
   /* Color azul */
   width: 50%;
   /* Ancho al 50% */
@@ -43,6 +44,7 @@ header {
   /* Ancho al 50% */
   height: 70vh;
   /* Altura al 50% de la altura de la ventana */
+  opacity: 0.8;
 }
 
 .bottom-row {
@@ -55,6 +57,8 @@ header {
   /* Ancho al 50% */
   height: 20vh;
   /* Altura al 50% de la altura de la ventana */
+  z-index: 2;
+  opacity: 0.8;
 }
 
 header h1 {
@@ -101,6 +105,16 @@ p {
 
 .boton-estandar:hover {
   background-color: #2980b9;
+}
+
+.background-video {
+  position: absolute; /* Posiciona el video absolutamente dentro del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Coloca el video detrás de los demás elementos */
 }
 
 /* Estilos para centrar en modo responsivo */
@@ -188,7 +202,6 @@ p {
 }
 
 @media (max-width: 700px) {
-  
   .header-content {
     margin: 100px auto;
   }
@@ -216,7 +229,6 @@ p {
   }
   .header-content {
     margin: 80px auto;
-    
   }
 
   .rectangle-box {
@@ -239,13 +251,10 @@ p {
 }
 
 @media (max-width: 400px) {
-
   header {
     width: 100%; /* En modo responsivo, el header ocupa el 100% del ancho de la pantalla */
     height: auto; /* La altura se ajustará automáticamente según el contenido */
   }
-
-  
 
   .rectangle-box {
     display: none;
@@ -262,11 +271,8 @@ p {
     letter-spacing: 0.5px; /* Ajusta el espaciado entre letras según tus preferencias */
     word-spacing: 1px; /* Ajusta la separación entre palabras según tus preferencias */
   }
-  
 
   .rectangle-box1 {
     display: none;
   }
-
 }
-

@@ -8,6 +8,7 @@ import '../styles/iniciopregunta.css';
 import '../styles/iniciocarrusel.css';
 import horizontalImage from '../img/horisontal.png';
 import verticalImage from '../img/vertical.png';
+import videoSrc from '../videos/iniciofondo.mp4';
 
 
 function importAll(r) {
@@ -67,19 +68,28 @@ function Inicio() {
     return (
         <div>
             <header className="header-container">
+                <div className="video-container">
+                    <video autoPlay loop muted className="background-video" preload='auto'>
+                        <source src={videoSrc} type="video/mp4" />
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
                 <div className="top-row">
                     <div className="header-background">
                         <div className="header-content">
-                            <h1>Academia de Trading<br />Aprende con los Mejores</h1>
+                            <h1>Constructora e Inmobiliaria<br />GUTIERREZ T.E</h1>
                             <p>
-                                Explora el emocionante mundo del trading con nosotros.
-                                Ya seas un principiante en busca de conocimientos básicos
-                                o un trader experimentado en busca de estrategias avanzadas,
-                                estamos aquí para guiarte. Únete a nuestra comunidad y potencia
-                                tus habilidades en el mercado financiero.
+                                Ofrece un servicio
+                                de excelencia garantizada y calidad a
+                                toda persona que requiera nuestro
+                                portafolio, arrendamiento y venta de
+                                inmueble. Fidelizando y aumentando
+                                los clientes a través de una entidad
+                                rentable, con profesionales a su
+                                disposición.
                             </p>
-                            <button className="boton-estandar">Ver Cursos</button>
-                            <button className="boton-estandar">Empieza Ya</button>
+                            <button className="boton-estandar">Ver Propiedades</button>
+                            <button className="boton-estandar">Contáctanos</button>
 
                         </div>
                     </div>
@@ -88,70 +98,71 @@ function Inicio() {
                 <div className="bottom-row">
                     <img src={horizontalImage} alt="Descripción de la imagen" className="rectangle-box1" />
                 </div>
-
             </header>
+
+
 
             <section id="proyecto">
                 <h3 className="titulo-seccion">Nuestros Servicios</h3>
                 <p className="titulo-seccion1">
-                    "Descubre nuestros servicios especializados en trading en <strong>Academia Legan</strong>. Potenciamos tu éxito en el emocionante mundo de las inversiones con soluciones personalizadas y expertas."
+                    "Descubre nuestros servicios especializados en construcción y bienes raíces en <strong>GUTIERREZ T.E</strong>. Potenciamos tu éxito en el mercado inmobiliario con soluciones personalizadas y expertas."
                 </p>
 
                 <div className="fila">
                     <div className="proyecto0">
-                        <a href='https://www.facebook.com/LeganFX'>
+                        <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                             <div className="overlay"></div>
-                            <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
+                            <img src={images['proyectos.jpg']} alt="Perfil Laptop" />
 
                             <div className="info">
-                                <h4>Academia Legan</h4>
+                                <h4>Desarrollo de Proyectos</h4>
                             </div>
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href='https://www.facebook.com/LeganFX'>
+                        <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                             <div className="overlay"></div>
-                            <img src={images['perfildenis.jpg']} alt="Perfil Laptop" />
+                            <img src={images['gestion.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Trading X Denis</h4>
+                                <h4>Gestión de Inmuebles</h4>
                             </div>
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href='https://www.facebook.com/LeganFX'>
+                        <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                             <div className="overlay"></div>
-                            <img src={images['perfiljorge.jpg']} alt="Perfil Laptop" />
+                            <img src={images['consultoria.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Trading X Jorge </h4>
+                                <h4>Consultoría Inmobiliaria</h4>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div className="fila">
                     <div className="proyecto0">
-                        <a href='https://www.facebook.com/LeganFX'>
+                        <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                             <div className="overlay"></div>
-                            <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
+                            <img src={images['arquitectura.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Webinars de Trading</h4>            
+                                <h4>Arquitectura y Diseño</h4>
                             </div>
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href='https://www.facebook.com/LeganFX'>
+                        <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                             <div className="overlay"></div>
-                            <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
+                            <img src={images['construccion.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Soporte de Trading</h4>
+                                <h4>Construcción Residencial</h4>
                             </div>
                         </a>
                     </div>
                     <div className="proyecto0">
-                        <a href='https://www.facebook.com/LeganFX'>
+                        <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
                             <div className="overlay"></div>
-                            <img src={images['perfillaptop.jpg']} alt="Perfil Laptop" />
+                            <img src={images['comercial.jpg']} alt="Perfil Laptop" />
                             <div className="info">
-                                <h4>Fundamentos de Trading</h4>
+                                <h4>Construcción Comercial</h4>
                             </div>
                         </a>
                     </div>
@@ -162,12 +173,12 @@ function Inicio() {
             <section id='pregunta'>
                 <div className="trading-content">
                     <div className="trading-image">
-                        <img src={images['laptop.jpg']} alt="Imagen de trading" />
+                        <img src={images['kimi.jpg']} alt="Imagen de trading" />
                     </div>
                     <div className="trading-text">
-                        <h2>¿Cómo puede una estrategia digital sólida llevar tus operaciones de trading al siguiente nivel?</h2>
-                        <p>En el mundo del trading, cada segundo cuenta. Nuestra agencia de trading digital está aquí para brindarte las herramientas y la visibilidad que necesitas en tu página de inicio.</p>
-                        <p>En el mundo del trading, cada segundo cuenta. Nuestra agencia de trading digital está aquí para brindarte las herramientas y la visibilidad que necesitas en tu página de inicio.</p>
+                        <h2>MISIÓN</h2>
+                        <p>Hacemos de Constructora e Inmobiliaria GUTIERREZ T.E. una empresa con visión de futuro. Nuestro compromiso es brindar lo mejor a nuestros clientes internos y externos, creando ventajas competitivas en un mercado global en constante crecimiento.</p>
+                        <p>Nos enfocamos en las nuevas generaciones y trabajamos junto a nuestros clientes para promover la estabilidad, el bienestar y el profesionalismo. Contribuimos al progreso del país, aportando nuestro compromiso y experiencia para impulsar mejoras significativas en la comunidad.</p>
                     </div>
 
                 </div>
@@ -175,18 +186,18 @@ function Inicio() {
 
             {/* Sección del carrusel */}
             <section className="slider-container">
-                <h2 className="titulo-especifico" >Ellos son algunos de nuestros Alumnos:</h2>
+                <h2 className="titulo-especifico">Explora algunos de nuestros Proyectos Destacados:</h2>
                 <Slider {...settings}>
-                    <div><img src={images['1.png']} alt="Alumno 1" /></div>
-                    <div><img src={images['2.png']} alt="Alumno 2" /></div>
-                    <div><img src={images['3.png']} alt="Alumno 3" /></div>
-                    <div><img src={images['4.png']} alt="Alumno 4" /></div>
-                    <div><img src={images['5.png']} alt="Alumno 5" /></div>
-                    <div><img src={images['6.png']} alt="Alumno 6" /></div>
-                    <div><img src={images['7.png']} alt="Alumno 7" /></div>
-                    <div><img src={images['8.png']} alt="Alumno 8" /></div>
-                    <div><img src={images['9.png']} alt="Alumno 9" /></div>
-                    <div><img src={images['10.png']} alt="Alumno 10" /></div>
+                    <div><img src={images['clientes.jpg']} alt="Alumno 1" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 2" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 3" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 4" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 5" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 6" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 7" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 8" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 9" /></div>
+                    <div><img src={images['2.jpg']} alt="Alumno 10" /></div>
 
                 </Slider>
             </section>

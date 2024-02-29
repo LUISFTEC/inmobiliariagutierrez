@@ -26,7 +26,7 @@ export default function App() {
               <div className="numero">1</div>
               <div className="texto">
                 <p>
-                  En un tranquilo pueblo de Cajamarca, Perú, **dos hermanos** crecieron rodeados de la sencillez y la calidez de su hogar.
+                  Nacimiento de GUTIERREZ T.E.: Fundada con la visión de ofrecer propiedades de calidad y servicios inmobiliarios excepcionales.
                 </p>
               </div>
             </article>
@@ -35,7 +35,7 @@ export default function App() {
               <div className="numero">2</div>
               <div className="texto">
                 <p>
-                  Después de completar sus estudios, tomaron una audaz decisión: mudarse a la bulliciosa capital, Lima.
+                  Enfoque en la Excelencia: Nos dedicamos a construir hogares que reflejen estándares superiores de diseño y funcionalidad.
                 </p>
               </div>
             </article>
@@ -44,7 +44,7 @@ export default function App() {
               <div className="numero">3</div>
               <div className="texto">
                 <p>
-                  En Lima, estos hermanos se aventuraron en el mundo del trading, un territorio desconocido para ellos al principio.
+                  Compromiso con la Calidad: Valoramos la confianza y la transparencia en nuestras relaciones con los clientes.
                 </p>
               </div>
             </article>
@@ -53,7 +53,7 @@ export default function App() {
               <div className="numero">4</div>
               <div className="texto">
                 <p>
-                  Fue su **hermana**, una mujer apasionada por las finanzas, quien les inspiró y les mostró el potencial del trading.
+                  Excelencia en cada Etapa: Nuestra dedicación a la excelencia se refleja en cada etapa del proceso, desde la planificación hasta la entrega final del proyecto.
                 </p>
               </div>
             </article>
@@ -62,7 +62,7 @@ export default function App() {
               <div className="numero">5</div>
               <div className="texto">
                 <p>
-                  Con determinación y aprendizaje constante, estos hermanos han logrado construir una exitosa carrera en el mundo del trading.
+                  Liderazgo e Innovación: Nos comprometemos a seguir siendo líderes en el mercado inmobiliario, ofreciendo soluciones innovadoras.
                 </p>
               </div>
             </article>
@@ -71,7 +71,7 @@ export default function App() {
               <div className="numero">6</div>
               <div className="texto">
                 <p>
-                  Hoy en día, comparten sus conocimientos a través de cursos y se han convertido en referentes en el campo financiero en Lima.
+                  Contribución a las Comunidades: Nos esforzamos por contribuir al crecimiento de las comunidades que servimos.
                 </p>
               </div>
             </article>
@@ -83,16 +83,16 @@ export default function App() {
         <div className="container1">
           <div className="body row padding-bottom">
             <article className="col-md-12 text-center">
-              <h2>Expertos en trading, optimizando inversiones y análisis de mercado.</h2>
+              <h2>Innovadores en construcción e inmobiliaria, creando hogares para tu futuro.</h2>
               <div className="split-columns">
                 <div className="column">
-                  <p><FontAwesomeIcon icon={faThumbsUp} /> Nos especializamos en trading, elevando las estrategias de inversión para nuestros clientes.</p>
-                  <p><FontAwesomeIcon icon={faThumbsUp} /> Nos especializamos en hacer crecer los proyectos de cada cliente, mejorando su imagen de marca en medios digitales y creando grandes comunidades en redes sociales.</p>
-                  <p><FontAwesomeIcon icon={faThumbsUp} /> Somos especialistas digitales por excelencia, enfocándonos en tener resultados rápidos y efectivos.</p>
+                  <p><FontAwesomeIcon icon={faThumbsUp} /> Nos dedicamos a construir hogares modernos y funcionales, adaptados a las necesidades de nuestros clientes.</p>
+                  <p><FontAwesomeIcon icon={faThumbsUp} /> Trabajamos para hacer realidad tus proyectos inmobiliarios, ofreciendo soluciones creativas y personalizadas.</p>
+                  <p><FontAwesomeIcon icon={faThumbsUp} /> Innovamos en el sector inmobiliario, utilizando tecnologías avanzadas y métodos de construcción eficientes.</p>
                 </div>
                 <div className="column">
-                  <p><FontAwesomeIcon icon={faThumbsUp} />Pioneros en trading, transformamos la gestión de inversiones y el análisis de mercados.</p>
-                  <p><FontAwesomeIcon icon={faThumbsUp} />Innovamos en trading, mejorando tácticas de inversión y análisis de mercado para clientes.</p>
+                  <p><FontAwesomeIcon icon={faThumbsUp} />Estamos revolucionando el mercado inmobiliario con ideas frescas y enfoques innovadores.</p>
+                  <p><FontAwesomeIcon icon={faThumbsUp} />Nos esforzamos por mejorar continuamente, aprendiendo de cada proyecto y adaptándonos a las nuevas tendencias.</p>
                 </div>
               </div>
             </article>
@@ -105,15 +105,15 @@ export default function App() {
           <h2 className="titulo-equipo">Nuestro Equipo</h2>
           <div className="miembros-equipo">
             {/* Aquí irían tus componentes MiembroEquipo con sus respectivas props */}
-            <MiembroEquipo imagen={images['perfiljorge.jpg']} nombre="Jorge Vigo" especialidad="CEO" />
-            <MiembroEquipo imagen={images['perfildenis.jpg']} nombre="Denis Vigo" especialidad="CEO" />
+            <MiembroEquipo imagen={images['kim.jpg']} nombre="Kymberly GT" especialidad="CEO" />
+            <MiembroEquipo imagen={images['kimi.jpg']} nombre="Kymberly GT" especialidad="CEO" />
             <MiembroEquipo imagen={images['redactorseo.png']} nombre="Carlos Martínez" especialidad="Redactor SEO" />
             <MiembroEquipo imagen={images['directoradecuentas.png']} nombre="María Rodríguez" especialidad="Directora de Cuentas" />
             <MiembroEquipo imagen={images['SocialMediaManager.png']} nombre="David Johnson" especialidad="Social Media Manager" />
             <MiembroEquipo imagen={images['AsistentedeMarketing.png']} nombre="Priya Patel" especialidad="Asistente de Marketing" />
             <MiembroEquipo imagen={images['DiseñadorWeb.png']} nombre="Hiroshi Tanaka" especialidad="Diseñador Web" />
             <MiembroEquipo imagen={images['Trader.png']} nombre="Leila Khalid" especialidad="Trader" />
-                      
+
 
             {/* Repite el componente MiembroEquipo por cada miembro del equipo */}
           </div>
